@@ -1,3 +1,29 @@
+
+// const valores = [1, 2, 3 , 4];
+// const soma = valores.reduce((ac, v) => {return ac + v})
+// console.log(soma)
+// secao 1.5
+// const nomes = ['Ana Maria', 'Antonio', 'Rodrigo', 'Alex', 'Cristina'];
+// const letrasIniciais = nomes.map((nome) => {return nome.charAt(0)})
+// console.log(letrasIniciais)
+// // filter
+// // arrow function
+// const numeros = [1, 2, 3, 4 , 5];
+// const result = numeros.map((numero) => {return numero ** 2})
+// console.log()
+// const resultado = nomes.filter( (nome) => {return nome.startsWith("A")}) 
+// console.log(resultado)
+// function soma(a, b){
+//     return (a + b);
+// }
+
+// console.log(soma(2,3))
+// Vetores
+// v1 = [];
+// v1[0] = 3.4;
+// v1[10] = 2;
+// console.log(v1);
+
 // console.log(true == 1);
 // console.log(1 == [1]);
 // console.log(null == null);
