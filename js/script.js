@@ -1,4 +1,106 @@
+// clojures
 
+function eAgora(){
+    let cont = 1;
+    function f1(){
+        console.log(cont);
+    }
+    cont++;
+    function f2(){
+        console.log(cont);
+    }
+    return {f1, f2};
+}
+
+let eAgoraResult = eAgora();
+eAgoraResult.f1();
+eAgoraResult.f2();
+// function saudacoesFactory(saudacao, nome){
+//     return function(){
+//         console.log(saudacao + ", " + nome);
+//     }
+// }
+
+// let olaJoao = saudacoesFactory("Ola", "Joao");
+// let tchauJoao = saudacoesFactory("Tchau", "Joao");
+
+// olaJoao();
+// tchauJoao();
+
+// function f(){
+//     let nome = 'João';
+//     function g(){
+//         let a;
+//         console.log(nome);
+//     }
+//     g();
+// }
+
+//f pode ser chamada assim
+// function f(funcao) {
+//   //chamando a função
+//   //note como a tipagem dinâmica tem seu preço
+//   funcao();
+// }
+
+// function g() {
+//   function outraFuncao() {
+//     console.log("Fui criada por g");
+//     return function () {
+//       console.log("Até logo");
+//     };
+//   }
+//   return outraFuncao;
+// }
+
+// f();
+// f(g()());
+// f(g);
+// f(g());
+// let umaFuncao = function () {
+//   console.log("Fui armazenado em uma variável");
+// };
+// f(function () {
+//     console.log("Estou sendo passada para f");
+//   });
+// umaFuncao();
+/*f recebe uma função como parâmetro e, por isso
+é uma função de alta ordem.
+Por devolver uma função, g também é de alta ordem.
+*/
+// //
+// //e g pode ser chamada assim
+// const gResult = g();
+// gResult();
+
+// g()
+//e assi
+// funções
+// const dobro = valor => valor * // console.log(dobro(2))
+
+// const ehPar = (n) =>
+//     n % 2 === 0;
+
+// console.log(ehPar(3));
+
+// const hello = () => console.log('Hello');
+// hello();
+
+// const teste = (a, b, c) => a * b * c;
+// console.log(teste(1, 2, 3));
+// a => {console.log(a)}
+// (a, b) => console.log(a + b)
+// // function hello(){
+// //     console.log('Hello')
+// }
+// hello();
+
+// function hello(nome){
+//     console.log(
+//         'Hello ' + nome
+//     );
+// }
+// hello('Flávia');
 // const valores = [1, 2, 3 , 4];
 // const soma = valores.reduce((ac, v) => {return ac + v})
 // console.log(soma)
@@ -11,7 +113,7 @@
 // const numeros = [1, 2, 3, 4 , 5];
 // const result = numeros.map((numero) => {return numero ** 2})
 // console.log()
-// const resultado = nomes.filter( (nome) => {return nome.startsWith("A")}) 
+// const resultado = nomes.filter( (nome) => {return nome.startsWith("A")})
 // console.log(resultado)
 // function soma(a, b){
 //     return (a + b);
