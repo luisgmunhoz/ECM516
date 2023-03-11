@@ -1,20 +1,89 @@
-// clojures
+// objetos literais Javascript
+// (JSON) Javascript Object Notation
 
-function eAgora(){
-    let cont = 1;
-    function f1(){
-        console.log(cont);
+// Uma concessionaria tem CNPJ e endereco (logradouro e numero). Ela possui três veículos no estoque. Cada veociçp tem modelo, marca e ano de fabricação
+
+let calc = {
+    soma: (a, b) => a + b,
+    subtracao: function(a, b){
+        return a - b
     }
-    cont++;
-    function f2(){
-        console.log(cont);
-    }
-    return {f1, f2};
 }
 
-let eAgoraResult = eAgora();
-eAgoraResult.f1();
-eAgoraResult.f2();
+console.log(calc.soma(2,3));
+console.log(calc['subtracao'](5,2))
+// let concessionaria = {
+//   cnpj: "12.12.2445",
+//   endereco: {
+//     logradouro: "Rua B",
+//     numero: 21,
+//   },
+//   veiculos: [
+//     {
+//       modelo: "hb20",
+//       marca: "honda",
+//       anoDeFabricacao: 2009,
+//     },
+//     {
+//       modelo: "fusca",
+//       marca: "volkswagen",
+//       anoDeFabricacao: 1980,
+//     },
+//     {
+//       modelo: "renegade",
+//       marca: "jeep",
+//       anoDeFabricacao: 2021,
+//     },
+//   ],
+// };
+
+// for (let veiculo of concessionaria.veiculos) {
+//   console.log(`Marca: ${veiculo.marca}`);
+//   console.log(`Modelo: ${veiculo.modelo}`);
+//   console.log(`Ano de Fabricação:${veiculo.anoDeFabricacao}`);
+// }
+
+// uma pessoa que se chama maria, tem 21 anos e mora na rua B, numero 21
+// let pessoa = {
+//   nome: "Maria",
+//   idade: 21,
+//   endereco: {
+//     logradouro: "Rua B",
+//     numero: 21,
+//   },
+// };
+
+// console.log(pessoa.nome);
+// console.log(pessoa.idade);
+// console.log(pessoa.endereco.logradouro);
+// console.log(pessoa.endereco.numero);
+
+// uma pessoa que se chama joão e tem 17 anos
+// let pessoa = {
+//     nome: "João",
+//     idade: 17
+// }
+
+// //. e [""]
+// console.log(pessoa["idade"]);
+
+// clojures
+
+// function eAgora(){
+//     let cont = 1;
+//     function f1(){
+//         console.log(cont);
+//     }
+//     cont++;
+//     function f2(){
+//         console.log(cont);
+//     }
+//     return {f1, f2};
+// }
+
+// let eAgoraResult = eAgora();
+// eAgoraResult.f1();
+// eAgoraResult.f2();
 // function saudacoesFactory(saudacao, nome){
 //     return function(){
 //         console.log(saudacao + ", " + nome);
